@@ -39,13 +39,13 @@ body {
     text-transform: uppercase;
     white-space: nowrap;
     text-shadow: 0 0 30px black;
-    transition: 2s ease-in-out all;
+    transition: 3s 1s ease-out all;
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(-50px);
 
     &.active {
-      opacity: 1;
       transform: translateY(0);
+      opacity: 1;
     }
 
     span {
@@ -56,16 +56,16 @@ body {
 
   p {
     font-family: text;
-    font-size: min(16vw, 2rem);
+    font-size: 2rem;
     color: #ffffffad;
     line-height: 1;
-    margin-top: 2rem;
+    margin: 2rem auto 0;
     white-space: nowrap;
     width: 0;
     height: 38px;
     overflow: hidden;
-    animation: typewriter 1.6s 3s steps(20) 1 forwards,
-    blink 0.8s 3s infinite;
+    animation: typewriter 1.6s 5s steps(19) 1 forwards,
+    blink 0.8s 5s infinite;
   }
 }
 
@@ -92,6 +92,6 @@ body {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 339.24px;
   }
 }

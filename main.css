@@ -38,13 +38,13 @@ body {
   text-transform: uppercase;
   white-space: nowrap;
   text-shadow: 0 0 30px black;
-  transition: 2s ease-in-out all;
+  transition: 3s 1s ease-out all;
   opacity: 0;
-  transform: translateY(-100px);
+  transform: translateY(-50px);
 }
 .container h1.active {
-  opacity: 1;
   transform: translateY(0);
+  opacity: 1;
 }
 .container h1 span {
   color: #7402ff;
@@ -52,15 +52,15 @@ body {
 }
 .container p {
   font-family: text;
-  font-size: min(16vw, 2rem);
+  font-size: 2rem;
   color: rgba(255, 255, 255, 0.6784313725);
   line-height: 1;
-  margin-top: 2rem;
+  margin: 2rem auto 0;
   white-space: nowrap;
   width: 0;
   height: 38px;
   overflow: hidden;
-  animation: typewriter 1.6s 3s steps(20) 1 forwards, blink 0.8s 3s infinite;
+  animation: typewriter 1.6s 5s steps(19) 1 forwards, blink 0.8s 5s infinite;
 }
 
 @keyframes pulse {
@@ -84,6 +84,6 @@ body {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 339.24px;
   }
 }/*# sourceMappingURL=main.css.map */

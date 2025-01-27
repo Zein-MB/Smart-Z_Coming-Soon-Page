@@ -23,4 +23,4 @@
 ---
 
 <small>SMART-Z 💜 <sub>*Where Creativity is Unleashed.*</sub></small>
-<br><small>*By Zein.* ✍️</small></br>
+<small>*By Zein.* ✍️</small>
