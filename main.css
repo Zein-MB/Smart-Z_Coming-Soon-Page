@@ -1,0 +1,89 @@
+@font-face {
+  font-family: heading;
+  src: url(./assets/Metropolis-ExtraBold.otf);
+}
+@font-face {
+  font-family: text;
+  src: url(./assets/Poppins-Light.ttf);
+}
+html::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to top, rgb(2, 0, 15) 10%, rgb(10, 0, 75));
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.container {
+  padding: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10rem auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8392156863);
+}
+.container h1 {
+  font-family: heading;
+  font-size: max(6vw, 4.8rem);
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow: 0 0 30px black;
+  transition: 2s ease-in-out all;
+  opacity: 0;
+  transform: translateY(-100px);
+}
+.container h1.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.container h1 span {
+  color: #7402ff;
+  animation: pulse 3s ease-in-out infinite alternate;
+}
+.container p {
+  font-family: text;
+  font-size: min(16vw, 2rem);
+  color: rgba(255, 255, 255, 0.6784313725);
+  line-height: 1;
+  margin-top: 2rem;
+  white-space: nowrap;
+  width: 0;
+  height: 38px;
+  overflow: hidden;
+  animation: typewriter 1.6s 3s steps(20) 1 forwards, blink 0.8s 3s infinite;
+}
+
+@keyframes pulse {
+  from {
+    text-shadow: 0 0 5px rgb(77, 32, 255);
+  }
+  to {
+    text-shadow: 0 0 50px rgb(77, 32, 255);
+  }
+}
+@keyframes blink {
+  from {
+    border-right: 1px solid rgba(255, 255, 255, 0.6784313725);
+  }
+  to {
+    border-right: 1px solid transparent;
+  }
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
